@@ -1,37 +1,37 @@
 ## Introduction
 The application is written for Java Programming module in year 2 of Software Development(2016) course at Galway Mayo Institute of Technology, Galway Campus. The application is a text parser.
 ### Features of the application:
-	* Reading a file
-	* Reading a document from url 
-	* Reading a url with JSOUP
-	* Show different statistics of the parsed file/url
-	* Search in the content by
-		* Contains the word
-		* Check occurrences
-		* Find first index
-		* Find last Index
-		* Find all indexes
-	* Modify the content
-		* Delete all occurrences of a word
-		* Delete a word at a given index
-		* Replace a word with another
-			* All occurrences of the word
-			* First occurrence of the word
-			* Last occurrence of the word
-	* Save the content into a file
+* Reading a file
+* Reading a document from url 
+* Reading a url with JSOUP
+* Show different statistics of the parsed file/url
+* Search in the content by
+	* Contains the word
+	* Check occurrences
+	* Find first index
+	* Find last Index
+	* Find all indexes
+* Modify the content
+	* Delete all occurrences of a word
+	* Delete a word at a given index
+	* Replace a word with another
+		* All occurrences of the word
+		* First occurrence of the word
+		* Last occurrence of the word
+* Save the content into a file
 
 ### Extra features added to the required ones:
-	* Graphical User Interface
-	* JSOUP url parsing
-	* Timing the loading time of file opening, searching and file saving
-	* Modular searching: You can choose any or all the searching methods
-	* Replacing a word at all occasion or just the first or just the last or first and last positions
-	* Saving the modified content into a new file
+* Graphical User Interface
+* JSOUP url parsing
+* Timing the loading time of file opening, searching and file saving
+* Modular searching: You can choose any or all the searching methods
+* Replacing a word at all occasion or just the first or just the last or first and last positions
+* Saving the modified content into a new file
 
 ### Extra libraries used:
-	* For debugging I chose to use sl4j with logback as I wanted to save every exception into a log file in a nicer format. It is easier to use than java.uitl.Logger (For me at least).
-	* I used the JSOUP for parsing a URL.
-	* Apache's commons io library to determine the extension of the file before saving it.
+* For debugging I chose to use sl4j with logback as I wanted to save every exception into a log file in a nicer format. It is easier to use than java.uitl.Logger (For me at least).
+* I used the JSOUP for parsing a URL.
+* Apache's commons io library to determine the extension of the file before saving it.
 
 
 
@@ -56,9 +56,9 @@ To read a file, the application is using the newBufferedReader method of java.ni
 To read a document form a simple url, I created a HttpURLConnection, followed by "emulating" a real user agent and finally wrapped the result into a BufferedReader. 
 
 URLs that works on both url parser:
-	* http://koronakiraly.hu
-	* http://koronakiraly.hu/warnp.txt
-	* http://www.gmit.ie
+* http://koronakiraly.hu
+* http://koronakiraly.hu/warnp.txt
+* http://www.gmit.ie
 
 http://google.ie works only with JSOUP
 
