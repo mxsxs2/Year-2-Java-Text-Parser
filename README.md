@@ -28,10 +28,19 @@ The application is written for Java Programming module in year 2 of Software Dev
 * Replacing a word at all occasion or just the first or just the last or first and last positions
 * Saving the modified content into a new file
 
-### Extra libraries used:
+### Extra libraries used
 * For debugging I chose to use sl4j with logback as I wanted to save every exception into a log file in a nicer format. It is easier to use than java.uitl.Logger (For me at least).
 * I used the JSOUP for parsing a URL.
 * Apache's commons io library to determine the extension of the file before saving it.
+
+#### Dependecies
+* beansbinding-1.2.1.jar
+* commons-io-2.5.jar
+* jsoup-1.10.1.jar
+* logback-classic-1.1.7.jar
+* logback-core-1.1.7.jar
+* slf4j-api-1.7.21.jar
+
 
 
 
